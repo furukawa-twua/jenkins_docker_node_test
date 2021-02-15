@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  form(action="/", method="get") 
+    p 
+      input(type="text", name="prime" value=prime id="prime")
+      button(type="submit") 判定
+  - if (showResult)
+    #result 
+      p(id="yeah")
+        - if (isPrime)
+          | Yes 素数
+        - else 
+          | No 素数
