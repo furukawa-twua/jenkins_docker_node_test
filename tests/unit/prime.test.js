@@ -2,7 +2,7 @@
 const chai = require('chai');
 const assert = chai.assert;
 
-const { isPrime } = require("../src/prime");
+const { isPrime } = require("../../src/prime");
 
 describe("素数判定単体テスト", function () {
     it("Return true when num is 2.", function () {
