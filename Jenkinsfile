@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('run unit test') {
             steps {
-                sh 'npm run test:unit'
+                sh 'npx mocha ./tests/unit/*.test.js'
             }
         }
         stage('run system test') {
             steps {
-                sh 'npm run test:system'
+                sh 'npx mocha ./tests/systemtest.test.js'
             }
         }
     }
