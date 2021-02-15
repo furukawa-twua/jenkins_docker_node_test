@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('run unit test') {
             steps {
-                sh 'npm --version'
                 sh 'npm run test:unit'
             }
         }
